@@ -1,0 +1,52 @@
+.con{display: flex;justify-content: center;}
+
+.outer{
+    display: grid;
+    grid-template-columns: repeat(10,50px);
+    grid-template-rows: repeat(10,50px);
+    row-gap: 2px;
+    column-gap: 2px;
+    background-color: #41a5f7;
+}
+.inner_box{
+    background-color: gray;
+
+}
+.option{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.option>div{
+    display: grid;
+    grid-template-columns: repeat(5,50px);
+    grid-template-rows: repeat(5,50px);
+    background-color: #0060af;
+    row-gap: 2px;
+    column-gap: 2px;
+    margin: 10px;
+}
+.option>div div{background-color: rgb(7, 0, 105);}
+
+.option .black{
+    background-color: black;
+}
+.outer .black{
+    background-color: black;
+}
+.glow{
+    box-shadow: 5px 10px 10px rgb(0, 102, 255) ;
+}
+
+.outer .shadow_green{
+    border:1px solid rgb(0, 252, 0);
+    box-shadow: 2px 2px 4px green;
+}
+.outer .shadow_red{
+    border: solid rgb(247, 41, 34);
+    box-shadow: 2px 2px 4px rgb(250, 0, 0);
+}
+
+.freespace:hover{
+    cursor:grab;
+}
