@@ -1,52 +1,90 @@
 .con{display: flex;justify-content: center;}
 
-.outer{
-    display: grid;
-    grid-template-columns: repeat(10,50px);
-    grid-template-rows: repeat(10,50px);
-    row-gap: 2px;
-    column-gap: 2px;
-    background-color: #41a5f7;
-}
-.inner_box{
-    background-color: gray;
+        .outer{
+            display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    row-gap: 5px;
+    column-gap: 5px;
+    background-color: #6ec6ff; /* Soft blue for the grid background */
+    border-radius: 10px; /* Rounded edges for the grid */
+    padding: 5px;
+        }
+        .inner_box{
+            background-color: #aaa;
+    border: 2px solid #888; /* A border for better box visibility */
+    transition: background-color 0.3s;
+        
+        }
 
+        .inner_box:hover {
+    background-color: #bbb; /* Change color on hover for interactivity */
 }
-.option{
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-}
-.option>div{
-    display: grid;
-    grid-template-columns: repeat(5,50px);
-    grid-template-rows: repeat(5,50px);
-    background-color: #0060af;
-    row-gap: 2px;
-    column-gap: 2px;
+        .option{
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .option>div{
+            display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    background-color: #007acc; /* Darker blue for option boxes */
+    row-gap: 5px;
+    column-gap: 5px;
     margin: 10px;
+    border-radius: 10px; /* Rounded edges for option boxes */
+    padding: 5px;
+        }
+        .option>div div{background-color: #0b1e66;
+    border: 1px solid #042740; /* Slight border for option box divs */
+    transition: background-color 0.3s;}
+    .option > div div:hover {
+    background-color: #003f99; /* Darker color on hover for options */
 }
-.option>div div{background-color: rgb(7, 0, 105);}
+        
+        .option .black{
+            background-color: black;
+        }
+        .outer .black{
+            background-color: black;
+        }
+        .glow{
+            box-shadow: 5px 10px 10px rgb(0, 102, 255) ;
+        }
+        
+        .outer .shadow_green{
+            border:1px solid rgb(0, 252, 0);
+            box-shadow: 2px 2px 4px green;
+        }
+        .outer .shadow_red{
+            border: solid rgb(247, 41, 34);
+            box-shadow: 2px 2px 4px rgb(250, 0, 0);
+        }
+        
+        .freespace {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffcc00; /* Bright yellow for 'makespace' button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-.option .black{
-    background-color: black;
+.freespace:hover {
+    background-color: #ffc107; /* Darker yellow on hover */
 }
-.outer .black{
-    background-color: black;
-}
-.glow{
-    box-shadow: 5px 10px 10px rgb(0, 102, 255) ;
-}
-
-.outer .shadow_green{
-    border:1px solid rgb(0, 252, 0);
-    box-shadow: 2px 2px 4px green;
-}
-.outer .shadow_red{
-    border: solid rgb(247, 41, 34);
-    box-shadow: 2px 2px 4px rgb(250, 0, 0);
+button {
+    padding: 10px 15px;
+    background-color: #28a745; /* Green for restart button */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-.freespace:hover{
-    cursor:grab;
+button:hover {
+    background-color: #218838; /* Darker green on hover */
 }
